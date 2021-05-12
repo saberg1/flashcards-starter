@@ -43,7 +43,7 @@ describe('Round', () => {
   it('should store incorrect guesses in array', () => {
 
     expect(round.incorrectGuesses).to.deep.equal([])
-  })
+  });
 })
 
 describe('returnCurrentCard', () => {
