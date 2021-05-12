@@ -39,7 +39,7 @@ describe('returnGuess', () =>{
 
     const guess = turn.returnGuess()
 
-    expect(guess).to.equal( "sort()")
+    expect(guess).to.equal("sort()")
   })
 })
 
