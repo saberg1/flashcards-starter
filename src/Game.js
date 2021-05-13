@@ -12,12 +12,6 @@ class Game {
   }
   
   start() {
-    //i want to remove each cardObj from the array of questions and
-    //put them into a new deck instance
-    //put deck instance into round?
-    //print message using CLI. what is CLI? 
-    //invokes printQuestion to kick off our helper functions that allow interaction via the CLI
-    //invoke game in index.js
     const question = prototypeQuestions.map(questions => {
       return new Card(
         questions.id, questions.question, 

@@ -13,12 +13,12 @@ beforeEach( () => {
 
 describe('Game', () => {
   
-  it.only('should instantiate a game', () => {
+  it('should instantiate a game', () => {
 
     expect(game).to.be.an.instanceOf(Game)
   })
 
-  it.only('should keep track of currentRound', () => {
+  it('should keep track of currentRound', () => {
 
     expect(game.currentRound).to.equal(undefined)
   })
@@ -26,12 +26,12 @@ describe('Game', () => {
 
 describe('start', () => {
   
-  it.only('should be a method', () => {
+  it('should be a method', () => {
 
     expect(game.start).to.be.a('function')
   })
 
-  it.only('should create a Deck of cards', () => {
+  it('should create a Deck of cards', () => {
 
     game.start()
 
@@ -40,7 +40,7 @@ describe('start', () => {
     expect(deck).to.be.an.instanceOf(Deck)
   })
 
-  it.only('should create a Round of cards', () => {
+  it('should create a Round of cards', () => {
 
     game.start()
 
