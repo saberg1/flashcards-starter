@@ -1,7 +1,6 @@
 const Deck = require('../src/Deck.js');
 const Card = require('../src/Card.js');
 const Round = require('../src/Round.js');
-const Turn = require('../src/Turn.js');
 
 const chai = require('chai');
 const expect = chai.expect;
@@ -119,6 +118,21 @@ describe('calculatePercentCorrect', () => {
     round.takeTurn('sort()')
     round.takeTurn('object')
 
-    expect(round.calculatePercentCorrect()).to.equal(.5)
+    expect(round.calculatePercentCorrect()).to.equal(50)
   })
+})
+
+describe('endRound', () => {
+
+  it('should be a method', () => {
+    
+    expect(round.endRound).to.be.a('function')
+  })
+
+  it.skip('should return \'** Round over! ** You answered 50% of the questions correctly!\'', () => {
+
+    round.takeTurn('sort()')
+    round.takeTurn('object')
+
+    expect(round.endRound()).to.deep.equal('** Round over! ** You answered 50% of the questions correctly!');  })
 })

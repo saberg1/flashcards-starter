@@ -28,7 +28,14 @@ class Round{
   }
 
   calculatePercentCorrect() {
-    return this.incorrectGuesses.length / this.turns
+    // console.log('calcualte percent: ', Math.round((this.incorrectGuesses.length / this.turns) * 100))
+    return Math.round((this.incorrectGuesses.length / this.turns) * 100)
+  }
+
+  endRound() {
+    // console.log('endRound: ', Math.round((this.incorrectGuesses.length / this.turns) * 100))
+
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
   }
 }
 
