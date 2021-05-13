@@ -1,4 +1,4 @@
-class Turn{
+class Turn {
   constructor(guess, card) {
     this.guess = guess
     this.card = card
@@ -19,6 +19,6 @@ class Turn{
   giveFeedback() {
     return this.evaluateGuess() === true ? 'correct!' : 'incorrect!'
   }
-};
+}
 
 module.exports = Turn
