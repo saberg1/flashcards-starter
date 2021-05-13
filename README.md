@@ -1,79 +1,76 @@
-# FlashCards Starter Kit
+# Flashcards
+### Table of Contents
+- [Overview](#overview-and-project-goals)
+- [Features](#features)
+- [How does this work?](#how-does-this-work)
+- [Project Reflection](#project-reflection)
+- [Instructions for Running Project](#Instructions-for-running-project)
+- [Authors and Contributors](#credits)
 
-## Fork This Repo
+## Overview and Project Goals
+The [goal](https://frontend.turing.edu/projects/flash-cards.html) of this group project that was made for Mod1 at [Turing School of Software and Design](https://turing.io/) is to build a flashcard game in Javascript.
 
-On the top right corner of this page, click the **Fork** button.
+## Why was this project created?
+To solidify and demonstrate the understanding of:
+1. Implement ES6 classes
+2. Write modular, reusable code that follows SRP
+3. Follow spec/prompts to make a working application
+4. Contribute code to an partially constructed object-oriented application
 
-## Setup
+## Features
+* A game that runs in the terminal and quizes the user on thier knowledge of array prototype methods
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+**[Back to top](#table-of-contents)**
 
-```bash
-git clone [remote-address] [what you want to name the repo]
-```
+## How does this work?
+![Gif of game](https://media.giphy.com/media/uipmamfwQRX7zMl7wR/giphy.gif)
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
-
-```bash
-npm install
-```
-
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
-
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
-
-```bash
-Node server running on port 3000
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
+* After initializing the game, you'll use your arrow keys of up/down to select your answer
+* Once you have what you suspect is the correct answer, you'll simple press enter until you run out of questions(30)
+* At the end of the game, it'll tally your score and return a percentage of correct guess!
 
 
-## Where to Add Your Code
+GitHub Page Link: https://github.com/Eva-Navarrete/rock-paper-scissor
 
-### JavaScript
+**[Back to top](#table-of-contents)**
 
-**Create all of your feature code files in the `src` directory.**
+## Instructions for Running Project
+1. Clone this [repository.](https://github.com/saberg1/flashcards-starter)
+2. `cd` into the repository in your terminal.
+3. Then `node index.js` in your terminal to play it on your terminal.
 
-We will be using the `module.exports` and `require` syntax to share code across files.
+## Technologies Used
+<p align="left">
+  <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="javascript" /><br>
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github" />
+</p>
 
-## How to View Your Code in Action
+## Project Reflection
 
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
+##### Wins
+* Created game that plays in the terminal running off multiple class to class interactions
+* Implementation of ES6 arrow functions and iterator methods
 
-```bash
-node index.js
-```
+##### Challenges
+* The logic for the difficult game.
+* trying to create DRY code.
 
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
+#### Future Features
+* Add option for users to redo thier missed questions
 
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
+## Credits
+#### Authors
+<table>
+     <tr>
+          <td> Steven Berg <a href="saberg1.github.io/ideabox-boilerplate/">GH</td>
+      </tr>
+      </tr>
+<td><img src="https://avatars.githubusercontent.com/u/27789047?s=400&u=c6ff851d568c1206e3440d76cae997d5312785be&v=4" alt="Steven GH img"
+width="150" height="auto" /></td>
+    </tr>
+</table>
 
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
----
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
-
----
+**************************************************************************
+###### This project was created for [Turing School of Software and Design](https://turing.io/)
+###### 2021/05/13
+**[Back to top](#table-of-contents)**
