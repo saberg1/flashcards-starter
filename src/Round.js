@@ -23,10 +23,8 @@ class Round {
     
     if (!turn.evaluateGuess()) {
       this.incorrectGuesses.push(turn.card.id)
-      return turn.giveFeedback() 
-    } else {
-      return turn.giveFeedback()
     }
+      return turn.giveFeedback()
   }
 
   calculatePercentCorrect() {
