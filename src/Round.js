@@ -29,13 +29,15 @@ class Round{
 
   calculatePercentCorrect() {
     // console.log('calcualte percent: ', Math.round((this.incorrectGuesses.length / this.turns) * 100))
-    return Math.round((this.incorrectGuesses.length / this.turns) * 100)
+    // return Math.round((this.incorrectGuesses.length / this.turns) * 100)
+    return Math.round(((this.turns - this.incorrectGuesses.length)/ this.turns ) * 100)
   }
 
   endRound() {
     // console.log('endRound: ', Math.round((this.incorrectGuesses.length / this.turns) * 100))
 
     console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
+    return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   }
 }
 

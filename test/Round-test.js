@@ -113,7 +113,7 @@ describe('calculatePercentCorrect', () => {
     expect(round.calculatePercentCorrect).to.be.a('function')
   })
 
-  it('should return the percentage of correct guesses', () => {
+  it.only('should return the percentage of correct guesses', () => {
     
     round.takeTurn('sort()')
     round.takeTurn('object')
@@ -134,5 +134,5 @@ describe('endRound', () => {
     round.takeTurn('sort()')
     round.takeTurn('object')
 
-    expect(round.endRound()).to.deep.equal('** Round over! ** You answered 50% of the questions correctly!');  })
+    expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!');  })
 })
