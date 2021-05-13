@@ -129,10 +129,10 @@ describe('endRound', () => {
     expect(round.endRound).to.be.a('function')
   })
 
-  it.skip('should return \'** Round over! ** You answered 50% of the questions correctly!\'', () => {
+  it('should return \'** Round over! ** You answered 50% of the questions correctly!\'', () => {
 
     round.takeTurn('sort()')
     round.takeTurn('object')
 
-    expect(round.endRound()).to.deep.equal('** Round over! ** You answered 50% of the questions correctly!');  })
+    expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!');  })
 })

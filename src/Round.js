@@ -36,6 +36,7 @@ class Round{
     // console.log('endRound: ', Math.round((this.incorrectGuesses.length / this.turns) * 100))
 
     console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
+    return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   }
 }
 
