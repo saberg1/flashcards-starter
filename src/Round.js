@@ -11,7 +11,6 @@ class Round {
   }
 
   returnCurrentCard() {
-
     return this.currentCard;
   }
 
