@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable no-console */
 const Card = require('./Card');
 const Deck = require('./Deck');
 const Round = require('./Round');
@@ -16,21 +18,21 @@ class Game {
       return new Card(
         questions.id, questions.question, 
         questions.answers, questions.correctAnswer
-        );
-      })
-      const deck = new Deck(question)
-      this.currentRound = new Round(deck)
-      this.printMessage(deck, this.currentRound)
-      this.printQuestion(this.currentRound)
-    }
+      );
+    })
+    const deck = new Deck(question)
+    this.currentRound = new Round(deck)
+    this.printMessage(deck, this.currentRound)
+    this.printQuestion(this.currentRound)
+  }
 
   printMessage(deck, round) {
-      console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
+    console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
 -----------------------------------------------------------------------`)
   }
 
   printQuestion(round) {
-      util.main(round);
+    util.main(round);
   }
 }
 

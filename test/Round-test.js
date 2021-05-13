@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const Deck = require('../src/Deck.js');
 const Card = require('../src/Card.js');
 const Round = require('../src/Round.js');
@@ -8,7 +9,7 @@ const expect = chai.expect;
 let card1, card2, card3, cards, deck, round
 
 beforeEach( () => {
-  card1 = new Card(6, 'What is an example of a mutator method?',['sort()', 'map()', 'join()'], 'sort()');
+  card1 = new Card(6, 'What is an example of a mutator method?', ['sort()', 'map()', 'join()'], 'sort()');
   card2 = new Card(8, 'What do iterator methods take in as their first argument?', ['callback function', 'current element', 'an array'], 'callback function')
   card3 = new Card(2, 'What is a comma-separated list of related values?', ['array', 'object', 'function'], 'array')
   cards = [card1, card2, card3]
@@ -78,32 +79,33 @@ describe('takeTurn', () => {
     expect(round.currentCard).to.deep.equal(card2)
   })
 
-    it('should evalute if user\'s guess is correct', () => {
-      let round1 = round.takeTurn('sort()')
+  it('should evalute if user\'s guess is correct', () => {
+    let round1 = round.takeTurn('sort()')
 
-     expect(round1).to.equal('correct!')
-    })
+    expect(round1).to.equal('correct!')
+  })
 
-    it('should evalute if user\'s guess is incorrect', () => {
-      let round1 = round.takeTurn()
+  it('should evalute if user\'s guess is incorrect', () => {
+    let round1 = round.takeTurn()
       
-     expect(round1).to.equal('incorrect!')
-    })
+    expect(round1).to.equal('incorrect!')
+  })
 
-    it('should store incorrect guesses in an array by ID', () => {
-      round.takeTurn('wrongAnswer')
+  it('should store incorrect guesses in an array by ID', () => {
+    round.takeTurn('wrongAnswer')
       
-      expect(round.incorrectGuesses).to.have.lengthOf(1)
-    })
+    expect(round.incorrectGuesses).to.have.lengthOf(1)
+  })
 
-    it('should give \'correct!\' feedback if correct', () => {
-      expect(round.takeTurn('sort()')).to.equal('correct!')
-    })
+  it('should give \'correct!\' feedback if correct', () => {
+    
+    expect(round.takeTurn('sort()')).to.equal('correct!')
+  })
 
-    it('should give \'incorrect!\' feedback if incorrect', () => {
+  it('should give \'incorrect!\' feedback if incorrect', () => {
 
-      expect(round.takeTurn('wrongAnswer')).to.equal('incorrect!')
-    })
+    expect(round.takeTurn('wrongAnswer')).to.equal('incorrect!')
+  })
 })
 
 describe('calculatePercentCorrect', () => {
@@ -134,5 +136,6 @@ describe('endRound', () => {
     round.takeTurn('sort()')
     round.takeTurn('object')
 
-    expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!');  })
+    expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!');  
+  })
 })
